@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Core">
+      <UniqueIdentifier>{98b85b33-bc21-438e-9212-6b635c5881e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameObjects">
+      <UniqueIdentifier>{1899cbcb-7588-4fae-91fc-3fbd47825a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Core">
+      <UniqueIdentifier>{bf2ad1f0-0589-4843-8a55-247332c8ddcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObjects">
+      <UniqueIdentifier>{b17d918b-3029-4977-9e16-bd755312324c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameObjects\Zombies">
+      <UniqueIdentifier>{f38ebb1a-2ed3-4e85-a4e0-5f73d9f8b49d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameObjects\Plants">
+      <UniqueIdentifier>{8899e458-e956-4801-a33c-79932a409909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameObjects\Projectiles">
+      <UniqueIdentifier>{82fe3144-cbdc-4c04-b45f-8386bd659927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameObjects\Other">
+      <UniqueIdentifier>{53d90b94-7e7e-49b7-9b03-e7329b61268c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObjects\Plants">
+      <UniqueIdentifier>{1c372083-515a-421b-9018-e65223d821f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObjects\Zombies">
+      <UniqueIdentifier>{96ba28fc-e842-4259-a2c3-2d10156cae69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObjects\Projectiles">
+      <UniqueIdentifier>{18a73a35-9c2a-4c3d-9b41-88d60a70a238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObjects\Other">
+      <UniqueIdentifier>{2e37a34a-82ba-4b7a-9940-abccfc883b17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SunSystem.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Armor.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="CardBar.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="CherryBomb.cpp">
+      <Filter>源文件\GameObjects\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalZombie.cpp">
+      <Filter>源文件\GameObjects\Zombies</Filter>
+    </ClCompile>
+    <ClCompile Include="PeaProjectile.cpp">
+      <Filter>源文件\GameObjects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Peashooter.cpp">
+      <Filter>源文件\GameObjects\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Repeater.cpp">
+      <Filter>源文件\GameObjects\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="Sun.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Sunflower.cpp">
+      <Filter>源文件\GameObjects\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>源文件\GameObjects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Wallnut.cpp">
+      <Filter>源文件\GameObjects\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="ChlorophyllButton.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IClickable.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SunSystem.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CardBar.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CherryBomb.h">
+      <Filter>头文件\GameObjects\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalZombie.h">
+      <Filter>头文件\GameObjects\Zombies</Filter>
+    </ClInclude>
+    <ClInclude Include="PeaProjectile.h">
+      <Filter>头文件\GameObjects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Peashooter.h">
+      <Filter>头文件\GameObjects\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Repeater.h">
+      <Filter>头文件\GameObjects\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="Sun.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Sunflower.h">
+      <Filter>头文件\GameObjects\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>头文件\GameObjects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Wallnut.h">
+      <Filter>头文件\GameObjects\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="ChlorophyllButton.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
