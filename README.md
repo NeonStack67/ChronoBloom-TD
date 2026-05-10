@@ -1,4 +1,4 @@
-# PVZ_QianHeShiKong (植物大战僵尸：千鹤时空)
+# PVZ_QianHeShiKong (植物大战僵尸：嵌合时空)
 
 A hardcore, data-driven *Plants vs. Zombies* remake engine built with C++ and SQLite.
 （一个基于 C++ 和 SQLite 数据驱动的硬核《植物大战僵尸》重制版引擎。）
