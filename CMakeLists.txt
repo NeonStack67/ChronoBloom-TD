@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(PVZ_QianHeShiKong)
+project(ChronoBloom_TD)
 
 # 你的代码里用到了 std::any，这要求必须使用 C++17
 set(CMAKE_CXX_STANDARD 17)
