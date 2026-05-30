@@ -8,7 +8,12 @@ protected:
     virtual void endBoost() { boosted = false; }
 
 public:
+    // Sprite 路径
     Plant(const std::string& textureKey, int lane, float hp, EventManager& bus);
+
+    // Spine 路径
+    Plant(Entity::SpineTag, const std::string& skelKey, int lane, float hp, EventManager& bus);
+
     virtual ~Plant() = default;
 
     virtual bool canBoost() const { return false; }

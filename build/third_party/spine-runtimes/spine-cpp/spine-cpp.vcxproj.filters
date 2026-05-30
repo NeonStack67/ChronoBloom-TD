@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\AnimationState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\AnimationStateData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Atlas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\AtlasAttachmentLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Attachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\AttachmentLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\AttachmentTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Bone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\BoneData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\BoneLocal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\BonePose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\BoneTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\BoundingBoxAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ClippingAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ColorTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Constraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ConstraintData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ConstraintTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ConstraintTimeline1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\CurveTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\DeformTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\DrawOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\DrawOrderFolderTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\DrawOrderTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\EventData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\EventTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Extension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\IkConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\IkConstraintData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\IkConstraintPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\IkConstraintTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\InheritTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Interpolation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\LinkedMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\MathUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\MeshAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraintData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraintMixTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraintPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraintPositionTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PathConstraintSpacingTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PhysicsConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PhysicsConstraintData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PhysicsConstraintPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PhysicsConstraintTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\PointAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\RTTI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\RegionAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\RotateTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ScaleTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SequenceTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\ShearTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Skeleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonBinary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonBounds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonClipping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonJson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SkeletonRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SliderData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SliderMixTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SliderPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SliderTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Slot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SlotCurveTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SlotData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SlotPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SlotTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\SpineObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TextureLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TextureRegion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Timeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TransformConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TransformConstraintData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TransformConstraintPose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TransformConstraintTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\TranslateTimeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Triangulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\Update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\src\spine\VertexAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AnimationState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AnimationStateData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ArrayUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Atlas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AtlasAttachmentLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Attachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AttachmentLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AttachmentTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\AttachmentType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BlendMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BlockAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Bone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BoneData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BoneLocal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BonePose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BoneTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\BoundingBoxAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ClippingAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ColorTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Constraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ConstraintTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ConstraintTimeline1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\CurveTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\DeformTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\DrawOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\DrawOrderFolderTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\DrawOrderTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\EventData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\EventTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\HasRendererObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\HashMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\IkConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\IkConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\IkConstraintPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\IkConstraintTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Inherit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\InheritTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Interpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\LinkedMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\MathUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\MeshAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraintMixTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraintPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraintPositionTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PathConstraintSpacingTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PhysicsConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PhysicsConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PhysicsConstraintPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PhysicsConstraintTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PointAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Pose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Posed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PosedActive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PosedData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\PositionMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\RTTI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\RegionAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\RotateMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\RotateTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ScaleTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SequenceTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\ShearTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Skeleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonBinary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonBounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonClipping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonJson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SkeletonRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SliderData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SliderMixTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SliderPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SliderTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Slot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SlotCurveTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SlotData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SlotPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SlotTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SpacingMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SpineObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\SpineString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TextureLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TextureRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Timeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TransformConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TransformConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TransformConstraintPose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TransformConstraintTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\TranslateTimeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Triangulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Update.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\VertexAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\include\spine\spine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E9F9EE7E-04B9-37C3-9DE3-42D9884CA1D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F20A8284-1F06-3245-A22E-904915A4233C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

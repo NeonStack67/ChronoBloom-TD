@@ -13,11 +13,11 @@ Sun::Sun(sf::Vector2f startPixelPos, float targetPixelY, int value,
     side = Side::Neutral;
     category = Category::Collectible;
 
-    auto texSize = sprite.getTexture().getSize();
+    auto texSize = sprite->getTexture().getSize();
     float maxDim = static_cast<float>(std::max(texSize.x, texSize.y));
     float scale = SunConfig::SUN_SPRITE_SIZE / maxDim;
-    sprite.setScale(sf::Vector2f(scale, scale));
-    sprite.setPosition(pixelPos);
+    sprite->setScale(sf::Vector2f(scale, scale));
+    sprite->setPosition(pixelPos);
 }
 
 // plant sun constructor
@@ -29,11 +29,11 @@ Sun::Sun(sf::Vector2f pixelPos, int value,
     side = Side::Neutral;
     category = Category::Collectible;
 
-    auto texSize = sprite.getTexture().getSize();
+    auto texSize = sprite->getTexture().getSize();
     float maxDim = static_cast<float>(std::max(texSize.x, texSize.y));
     float scale = SunConfig::SUN_SPRITE_SIZE / maxDim;
-    sprite.setScale(sf::Vector2f(scale, scale));
-    sprite.setPosition(pixelPos);
+    sprite->setScale(sf::Vector2f(scale, scale));
+    sprite->setPosition(pixelPos);
 }
 
 void Sun::update(float dt) {
@@ -45,7 +45,7 @@ void Sun::update(float dt) {
             state = State::Idle;
             idleTimer = 0.f;
         }
-        sprite.setPosition(pixelPos);
+        sprite->setPosition(pixelPos);
         break;
 
     case State::Idle:
@@ -59,14 +59,13 @@ void Sun::update(float dt) {
         sf::Vector2f diff = flyTarget - pixelPos;
         float dist = std::sqrt(diff.x * diff.x + diff.y * diff.y);
         if (dist < 5.f) {
-            // Publish CollectResource event
             eventBus.publish(GameEvent(EventType::CollectResource,
                 CollectResourceData{ value }));
             active = false;
         } else {
             sf::Vector2f dir = diff / dist;
             pixelPos += dir * SunConfig::FLY_SPEED * dt;
-            sprite.setPosition(pixelPos);
+            sprite->setPosition(pixelPos);
         }
         break;
     }
@@ -75,13 +74,13 @@ void Sun::update(float dt) {
 
 void Sun::draw(sf::RenderWindow& window) {
     if (active) {
-        window.draw(sprite);
+        window.draw(*sprite);
     }
 }
 
 bool Sun::containsPoint(sf::Vector2f point) const {
     if (!active || state == State::Flying) return false;
-    return sprite.getGlobalBounds().contains(point);
+    return sprite->getGlobalBounds().contains(point);
 }
 
 bool Sun::onClick(sf::Vector2f /*pixelPos*/) {
@@ -89,3 +88,4 @@ bool Sun::onClick(sf::Vector2f /*pixelPos*/) {
     state = State::Flying;
     return true;
 }
+

@@ -104,13 +104,13 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>C:\SFML-3.0.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\SFML-3.0.2\include;$(ProjectDir)third_party\spine-runtimes\spine-cpp\include;$(ProjectDir)third_party\spine-runtimes\spine-sfml\src;$(ProjectDir)third_party\sqlite3</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\SFML-3.0.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SFML-3.0.2\lib;$(ProjectDir)build\third_party\spine-runtimes\spine-cpp\Debug;$(ProjectDir)build\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;spine-cpp.lib;sqlite3_embed.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -123,13 +123,13 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>C:\SFML-3.0.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\SFML-3.0.2\include;$(ProjectDir)third_party\spine-runtimes\spine-cpp\include;$(ProjectDir)third_party\spine-runtimes\spine-sfml\src;$(ProjectDir)third_party\sqlite3</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\SFML-3.0.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SFML-3.0.2\lib;$(ProjectDir)build\third_party\spine-runtimes\spine-cpp\Release;$(ProjectDir)build\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;spine-cpp.lib;sqlite3_embed.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -153,6 +153,9 @@
     <ClCompile Include="Wallnut.cpp" />
     <ClCompile Include="Zombie.cpp" />
     <ClCompile Include="Repeater.cpp" />
+    <ClCompile Include="SpineManager.cpp" />
+    <ClCompile Include="SpineComponent.cpp" />
+    <ClCompile Include="third_party\spine-runtimes\spine-sfml\src\spine-sfml.cpp" />
     <ClCompile Include="SunSystem.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="ChlorophyllButton.cpp" />
@@ -180,6 +183,8 @@
     <ClInclude Include="Wallnut.h" />
     <ClInclude Include="Zombie.h" />
     <ClInclude Include="Repeater.h" />
+    <ClInclude Include="SpineManager.h" />
+    <ClInclude Include="SpineComponent.h" />
     <ClInclude Include="IClickable.h" />
     <ClInclude Include="SunSystem.h" />
     <ClInclude Include="InputHandler.h" />

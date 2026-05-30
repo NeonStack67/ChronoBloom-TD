@@ -4,16 +4,19 @@
 #include "DatabaseHelper.h"
 
 Peashooter::Peashooter(int lane, EventManager& bus, const EntityManager& em)
-    : Plant("Peashooter", lane, 100.f, bus),
+    : Plant(Entity::SpineTag{}, "Peashooter", lane, 100.f, bus),
     entityMgr(em),
     shootCooldown(1.5f),
     timeSinceLastShot(0.f)
 {
-    // 从数据库同步战斗数值
-    // PlantStats stats = getPlantStatsFromDB("Peashooter");
     const auto& stats = DataManager::getInstance().getStats("Peashooter");
     this->hp = static_cast<float>(stats.hp);
     this->maxHp = static_cast<float>(stats.hp);
+
+    // 初始播放 idle 动画
+    if (spineComp) {
+        spineComp->playAnimation("idle", true, 0);
+    }
 }
 
 void Peashooter::onBoost() {
@@ -28,6 +31,8 @@ void Peashooter::endBoost() {
 }
 
 void Peashooter::update(float dt) {
+    if (dying) { Plant::update(dt); return; }
+
     timeSinceLastShot += dt;
 
     if (timeSinceLastShot >= shootCooldown) {
@@ -43,11 +48,17 @@ void Peashooter::update(float dt) {
             };
             eventBus.publish(GameEvent(EventType::SpawnEntity, spawn));
             timeSinceLastShot = 0.f;
+
+            // 触发射击动画（单次），结束后回到 idle
+            if (spineComp) {
+                spineComp->playAnimation("attack", false, 0);
+                spineComp->addAnimation("idle", true, 0);
+            }
         }
 
         if (boosted && --boostPeasRemaining <= 0) {
             endBoost();
-		}
+        }
     }
 
     Plant::update(dt);

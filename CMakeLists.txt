@@ -1,28 +1,36 @@
 cmake_minimum_required(VERSION 3.15)
 project(ChronoBloom_TD)
 
-# 你的代码里用到了 std::any，这要求必须使用 C++17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 搜集当前目录下所有的 .cpp 和 .h 文件
-file(GLOB SOURCES "*.cpp" "*.h")
+# spine-cpp
+add_subdirectory(third_party/spine-runtimes/spine-cpp)
 
-# 生成可执行文件
-add_executable(${PROJECT_NAME} ${SOURCES}
-        DatabaseHelper.h)
+# SQLite3 amalgamation
+add_library(sqlite3_embed STATIC third_party/sqlite3/sqlite3.c)
+target_include_directories(sqlite3_embed PUBLIC third_party/sqlite3)
+if(MSVC)
+    target_compile_options(sqlite3_embed PRIVATE /W0)
+endif()
 
-# 寻找本地安装的 SFML 库
+file(GLOB SOURCES *.cpp *.h)
+set(SPINE_SFML_SRC third_party/spine-runtimes/spine-sfml/src/spine-sfml.cpp)
+
+add_executable(${PROJECT_NAME} ${SOURCES} DatabaseHelper.h ${SPINE_SFML_SRC})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    third_party/spine-runtimes/spine-cpp/include
+    third_party/spine-runtimes/spine-sfml/src
+    third_party/sqlite3
+)
+
 find_package(SFML COMPONENTS Graphics Window System REQUIRED)
 
-# 将 SFML 链接到你的游戏程序上
-target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    SFML::Graphics SFML::Window SFML::System
+    sqlite3_embed
+    spine-cpp
+)
 
-# 每次编译时，自动将 Assets 文件夹复制到可执行文件所在的输出目录
 file(COPY Assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-
-# 在 find_package(SFML ...) 下面加上这行
-find_package(SQLite3 REQUIRED)
-
-# 在 target_link_libraries 里把 SQLite::SQLite3 加上
-target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics SFML::Window SFML::System SQLite::SQLite3)

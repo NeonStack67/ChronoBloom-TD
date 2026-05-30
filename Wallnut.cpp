@@ -4,13 +4,16 @@
 #include "DatabaseHelper.h"
 
 Wallnut::Wallnut(int lane, EventManager& bus)
-    : Plant("Wallnut", lane, 1000.f, bus)
+    : Plant(Entity::SpineTag{}, "Wallnut", lane, 1000.f, bus)
 {
-    // 从数据中心读取数值（再次注意横杠！）
     const auto& stats = DataManager::getInstance().getStats("Wallnut");
 
     this->hp = static_cast<float>(stats.hp);
     this->maxHp = static_cast<float>(stats.hp);
+
+    if (spineComp) {
+        spineComp->playAnimation("idle", true, 0);
+    }
 }
 
 bool Wallnut::canBoost() const {
@@ -32,3 +35,4 @@ void Wallnut::update(float dt) {
     }
     Character::update(dt);
 }
+

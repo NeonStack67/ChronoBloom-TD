@@ -1,0 +1,10 @@
+^C:\USERS\JUN_J\SOURCE\REPOS\PVZ_QIANHESHIKONG\THIRD_PARTY\SPINE-RUNTIMES\SPINE-CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jun_j/source/repos/PVZ_QianHeShiKong -BC:/Users/jun_j/source/repos/PVZ_QianHeShiKong/build --check-stamp-file C:/Users/jun_j/source/repos/PVZ_QianHeShiKong/build/third_party/spine-runtimes/spine-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

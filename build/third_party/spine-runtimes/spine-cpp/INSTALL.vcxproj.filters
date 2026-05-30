@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\build\CMakeFiles\1911a29f68f33923fe6819346bba7e11\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9B7BB821-F327-3DF4-8615-153AD559D5D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

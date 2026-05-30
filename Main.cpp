@@ -7,6 +7,7 @@
 
 #include "Config.h"
 #include "ResourceManager.h"
+#include "SpineManager.h"
 #include "EventManager.h"
 #include "EntityManager.h"
 #include "GameEvent.h"
@@ -22,29 +23,75 @@ int main() {
     sf::RenderWindow window(sf::VideoMode({ Config::WINDOW_WIDTH, Config::WINDOW_HEIGHT }), Config::WINDOW_TITLE);
     window.setFramerateLimit(Config::FPS_LIMIT);
 
-    // 2. Resources
+    // 2. SFML 静态纹理资源（仅保留不使用 Spine 的实体）
     auto& resMgr = ResourceManager::getInstance();
     try {
-        resMgr.loadTexture("Peashooter", "Assets/peashooter.png");
-        resMgr.loadTexture("Sunflower", "Assets/sunflower.png");
-        resMgr.loadTexture("Repeater", "Assets/repeater.png");
-        resMgr.loadTexture("CherryBomb", "Assets/cherry_bomb.png");
-        resMgr.loadTexture("Wallnut", "Assets/wallnut.png");
-        resMgr.loadTexture("NormalZombie", "Assets/zombie.png");
-        resMgr.loadTexture("ConeArmor", "Assets/cone_armor.png");
-        resMgr.loadTexture("BucketArmor", "Assets/bucket_armor.png");
-        resMgr.loadTexture("PeaProjectile", "Assets/pea.png");
-        resMgr.loadTexture("Sun", "Assets/sun.png");
-        resMgr.loadTexture("CardBg", "Assets/card_bg.png");
-        resMgr.loadTexture("Background", "Assets/background.png");
-        resMgr.loadFont("default", "Assets/ARLRDBD.TTF");
+        // 护甲（仍使用 sf::Sprite 叠加在骨骼上）
+        resMgr.loadTexture("ConeArmor",    "Assets/cone_armor.png");
+        resMgr.loadTexture("BucketArmor",  "Assets/bucket_armor.png");
+        // 投射物
+        resMgr.loadTexture("PeaProjectile","Assets/pea.png");
+        // 太阳
+        resMgr.loadTexture("Sun",          "Assets/sun.png");
+        // UI
+        resMgr.loadTexture("CardBg",       "Assets/card_bg.png");
+        resMgr.loadTexture("Background",   "Assets/background.png");
+        // 卡牌缩略图（CardBar 显示用，仍用静态图）
+        resMgr.loadTexture("Peashooter",   "Assets/peashooter.png");
+        resMgr.loadTexture("Sunflower",    "Assets/sunflower.png");
+        resMgr.loadTexture("Repeater",     "Assets/repeater.png");
+        resMgr.loadTexture("CherryBomb",   "Assets/cherry_bomb.png");
+        resMgr.loadTexture("Wallnut",      "Assets/wallnut.png");
+        resMgr.loadFont("default",         "Assets/ARLRDBD.TTF");
     }
     catch (const std::exception& e) {
-        std::cerr << "Fatal Error: " << e.what() << std::endl;
+        std::cerr << "Fatal Error (textures): " << e.what() << std::endl;
         return -1;
     }
 
-    // 3. Core systems
+    // 3. Spine 骨骼动画资源（植物 + 僵尸）
+    // 注意：当 partner 提供 .skel/.atlas 文件后，放入对应目录即可生效
+    // 文件路径约定：Assets/spine/<EntityName>/<EntityName>.atlas 和 .skel
+    {
+        auto& spineMgr = SpineManager::getInstance();
+        bool spineOk = true;
+
+        // 植物
+        spineOk &= spineMgr.loadSkeleton("Peashooter",
+            "Assets/spine/Peashooter/Peashooter.atlas",
+            "Assets/spine/Peashooter/Peashooter.skel");
+        spineOk &= spineMgr.loadSkeleton("Sunflower",
+            "Assets/spine/Sunflower/Sunflower.atlas",
+            "Assets/spine/Sunflower/Sunflower.skel");
+        spineOk &= spineMgr.loadSkeleton("Repeater",
+            "Assets/spine/Repeater/Repeater.atlas",
+            "Assets/spine/Repeater/Repeater.skel");
+        spineOk &= spineMgr.loadSkeleton("CherryBomb",
+            "Assets/spine/CherryBomb/CherryBomb.atlas",
+            "Assets/spine/CherryBomb/CherryBomb.skel");
+        spineOk &= spineMgr.loadSkeleton("Wallnut",
+            "Assets/spine/Wallnut/Wallnut.atlas",
+            "Assets/spine/Wallnut/Wallnut.skel");
+
+        // 僵尸
+        spineOk &= spineMgr.loadSkeleton("NormalZombie",
+            "Assets/spine/NormalZombie/NormalZombie.atlas",
+            "Assets/spine/NormalZombie/NormalZombie.skel");
+        spineOk &= spineMgr.loadSkeleton("ConeheadZombie",
+            "Assets/spine/ConeheadZombie/ConeheadZombie.atlas",
+            "Assets/spine/ConeheadZombie/ConeheadZombie.skel");
+        spineOk &= spineMgr.loadSkeleton("BucketheadZombie",
+            "Assets/spine/BucketheadZombie/BucketheadZombie.atlas",
+            "Assets/spine/BucketheadZombie/BucketheadZombie.skel");
+
+        if (!spineOk) {
+            std::cerr << "[Main] Warning: Some Spine assets failed to load.\n"
+                      << "  Entities without Spine data will not render until assets are provided.\n";
+            // 不 return -1，允许游戏在无 Spine 资产时继续运行（实体不可见但逻辑正常）
+        }
+    }
+
+    // 4. Core systems
     EventManager eventBus;
     EntityManager entityManager(eventBus);
 

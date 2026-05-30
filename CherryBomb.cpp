@@ -5,27 +5,28 @@
 #include <cmath>
 
 CherryBomb::CherryBomb(int lane, EventManager& bus)
-    : Plant("CherryBomb", lane, 100.f, bus),
+    : Plant(Entity::SpineTag{}, "CherryBomb", lane, 100.f, bus),
       fuseTime(1.2f),
       timer(0.f),
       exploded(false)
 {
-    // 【新增】从数据中心读取真实的血量
     const auto& stats = DataManager::getInstance().getStats("CherryBomb");
     this->hp = static_cast<float>(stats.hp);
     this->maxHp = static_cast<float>(stats.hp);
+
+    if (spineComp) {
+        spineComp->playAnimation("idle", true, 0);
+    }
 }
 
 void CherryBomb::update(float dt) {
-    if (exploded) return;
+    //if (exploded) return;
 
     timer += dt;
 
     if (timer >= fuseTime) {
         exploded = true;
 
-        // Calculate blast area in pixel coordinates centered on this plant
-        // BLAST_RADIUS = 1.5 cells means a 3x3 cell area (1.5 cells each side from center)
         sf::Vector2f center = Grid::gridToPixel(getGridPos());
         float halfW = Grid::CELL_WIDTH  * 1.5f;
         float halfH = Grid::CELL_HEIGHT * 1.5f;
@@ -35,9 +36,7 @@ void CherryBomb::update(float dt) {
             sf::Vector2f(halfW * 2.f, halfH * 2.f)
         );
 
-        // 【新增】在引爆前，再次获取数据库中的伤害数值
         const auto& stats = DataManager::getInstance().getStats("CherryBomb");
-        // Publish AOE damage event via DamageEventData
         DamageEventData dmg;
         dmg.targetArea  = blastArea;
         dmg.damage      = 1800.f;
@@ -45,7 +44,8 @@ void CherryBomb::update(float dt) {
 
         eventBus.publish(GameEvent(EventType::ApplyDamage, dmg));
 
-        // Destroy self after exploding
+        // Spine 路径：播放爆炸动画后延迟销毁，由 dying/die 机制处理
+        // 直接 destroy 即可（爆炸视觉由 Spine explode 动画表现）
         destroy();
         return;
     }
@@ -56,22 +56,41 @@ void CherryBomb::update(float dt) {
 void CherryBomb::draw(sf::RenderWindow& window) {
     if (exploded) return;
 
-    // Pulsating scale effect during fuse countdown
-    float progress = timer / fuseTime;           // 0..1
-    float pulse = 1.f + 0.15f * std::sin(progress * 12.f);
-    auto texSize = sprite.getTexture().getSize();
-    float maxDim = static_cast<float>(std::max(texSize.x, texSize.y));
-    float baseScale = Grid::CELL_MIN / maxDim;
-    sprite.setScale(sf::Vector2f(baseScale * pulse, baseScale * pulse));
+    float progress = timer / fuseTime; // 0..1
 
-    // Tint increasingly red as fuse progresses
-    auto r = static_cast<uint8_t>(255);
-    auto g = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
-    auto b = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
-    sprite.setColor(sf::Color(r, g, b));
+    if (hasSpine() && spineComp) {
+        // Spine 路径：用 scale 实现脉冲，用 tint 实现红色渐变
+        float pulse = 1.f + 0.15f * std::sin(progress * 12.f);
+        spineComp->setScale(pulse, pulse);
 
-    Plant::draw(window);
+        auto g = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
+        auto b = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
+        spineComp->setTint(sf::Color(255, g, b));
 
-    // Reset color
-    sprite.setColor(sf::Color::White);
+        Plant::draw(window);
+
+        // 重置 scale（不重置 tint，由 Plant::draw 的激发逻辑统一管理）
+        spineComp->setScale(1.f, 1.f);
+    } else {
+        // Sprite 路径（fallback）
+        if (sprite.has_value()) {
+            float pulse = 1.f + 0.15f * std::sin(progress * 12.f);
+            auto texSize = sprite->getTexture().getSize();
+            float maxDim = static_cast<float>(std::max(texSize.x, texSize.y));
+            float baseScale = Grid::CELL_MIN / maxDim;
+            sprite->setScale(sf::Vector2f(baseScale * pulse, baseScale * pulse));
+
+            auto r = static_cast<uint8_t>(255);
+            auto g = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
+            auto b = static_cast<uint8_t>(255 * (1.f - progress * 0.6f));
+            sprite->setColor(sf::Color(r, g, b));
+        }
+
+        Plant::draw(window);
+
+        if (sprite.has_value()) {
+            sprite->setColor(sf::Color::White);
+        }
+    }
 }
+
