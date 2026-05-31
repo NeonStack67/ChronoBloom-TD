@@ -198,7 +198,7 @@ int main() {
         entityManager.update(dt);
 
         // TODO: extract to WaveManager
-        if (rand() % 1000 == 5) {
+        if (rand() % 300 == 5) {
             int lane = rand() % 5;
             int roll = rand() % 100;
             std::string zombieType;

@@ -31,6 +31,12 @@ public:
 
     virtual ~Entity() = default;
 
+    // Non-copyable, movable (unique members prevent implicit copy)
+    Entity(const Entity&) = delete;
+    Entity& operator=(const Entity&) = delete;
+    Entity(Entity&&) = default;
+    Entity& operator=(Entity&&) = default;
+
     uint32_t getSide() const { return side; }
     uint32_t getCategory() const { return category; }
     int getLane() const { return lane; }

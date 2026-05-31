@@ -5,11 +5,6 @@ class CherryBomb : public Plant {
 public:
     CherryBomb(int lane, EventManager& bus);
 
-    void update(float dt) override;
-    void draw(sf::RenderWindow& window) override;
+    void destroy() override;
 
-private:
-    float fuseTime;
-    float timer;
-    bool exploded;
 };

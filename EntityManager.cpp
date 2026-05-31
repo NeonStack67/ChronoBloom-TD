@@ -163,30 +163,50 @@ IClickable* EntityManager::findClickableAt(sf::Vector2f pixelPos) const {
 }
 
 void EntityManager::handleCollisions() {
-    for (size_t i = 0; i < entities.size(); ++i) {
-        for (size_t j = i + 1; j < entities.size(); ++j) {
-            auto& a = entities[i];
-            auto& b = entities[j];
+    // Use spatial grid: only check pairs within the same or adjacent cells
+    for (int row = 0; row < Grid::ROWS; ++row) {
+        for (int col = 0; col < Grid::COLS; ++col) {
+            auto& cell = gridCells[row][col];
 
-            if (!a->isActive() || !b->isActive()) continue;
+            // Pairs within this cell
+            for (size_t i = 0; i < cell.size(); ++i) {
+                for (size_t j = i + 1; j < cell.size(); ++j) {
+                    Entity* a = cell[i];
+                    Entity* b = cell[j];
+                    if (!a->isActive() || !b->isActive()) continue;
+                    if ((a->getCategory() & Category::Collectible) ||
+                        (b->getCategory() & Category::Collectible)) continue;
+                    if (a->getBounds().findIntersection(b->getBounds()).has_value()) {
+                        a->onCollision(b);
+                        b->onCollision(a);
+                    }
+                }
+            }
 
-            // Skip collectible entities (Sun etc.)
-            if ((a->getCategory() & Category::Collectible) ||
-                (b->getCategory() & Category::Collectible)) continue;
-
-            if (a->getLane() != b->getLane()) continue;
-
-            if (a->getBounds().findIntersection(b->getBounds()).has_value()) {
-                a->onCollision(b.get());
-                b->onCollision(a.get());
+            // Cross-cell pairs: check right neighbor only (avids double-checking)
+            if (col + 1 < Grid::COLS) {
+                auto& right = gridCells[row][col + 1];
+                for (Entity* a : cell) {
+                    for (Entity* b : right) {
+                        if (!a->isActive() || !b->isActive()) continue;
+                        if ((a->getCategory() & Category::Collectible) ||
+                            (b->getCategory() & Category::Collectible)) continue;
+                        if (a->getLane() != b->getLane()) continue;
+                        if (a->getBounds().findIntersection(b->getBounds()).has_value()) {
+                            a->onCollision(b);
+                            b->onCollision(a);
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 void EntityManager::onSpawnEntity(const GameEvent& event) {
-    if (auto pdata = std::any_cast<SpawnEventData>(&event.data)) {
-        const auto& data = *pdata;
+    auto* pdata = std::get_if<SpawnEventData>(&event.data);
+    if (!pdata) return;
+    const auto& data = *pdata;
 
         std::unique_ptr<Entity> newEntity = nullptr;
 
@@ -243,20 +263,17 @@ void EntityManager::onSpawnEntity(const GameEvent& event) {
             newEntity->syncSprite();
             pendingEntities.push_back(std::move(newEntity));
         }
-    } else {
-        std::cerr << "Warning: onSpawnEntity received wrong event data type\n";
-    }
 }
 
 void EntityManager::onApplyDamage(const GameEvent& event) {
-    if (auto dptr = std::any_cast<DirectDamageData>(&event.data)) {
+    if (auto* dptr = std::get_if<DirectDamageData>(&event.data)) {
         const auto& data = *dptr;
         auto* character = dynamic_cast<Character*>(data.target);
         if (character) {
             character->takeDamage(data.damage);
         }
     }
-    else if (auto dptr = std::any_cast<DamageEventData>(&event.data)) {
+    else if (auto* dptr = std::get_if<DamageEventData>(&event.data)) {
         const auto& data = *dptr;
 
         // Convert pixel-space targetArea to grid cell range
@@ -289,9 +306,6 @@ void EntityManager::onApplyDamage(const GameEvent& event) {
             }
         }
     }
-    else {
-        std::cerr << "Warning: onApplyDamage received wrong event data type\n";
-    }
 }
 
 Plant* EntityManager::findPlantAt(int col, int row) const {
@@ -307,10 +321,10 @@ Plant* EntityManager::findPlantAt(int col, int row) const {
 }
 
 void EntityManager::onApplyBoost(const GameEvent& event) {
-    if (auto bptr = std::any_cast<BoostEventData>(&event.data)) {
-        Plant* plant = findPlantAt(bptr->col, bptr->row);
-        if (plant && plant->canBoost() && !plant->isBoosted()) {
-            plant->onBoost();
-        }
+    auto* bptr = std::get_if<BoostEventData>(&event.data);
+    if (!bptr) return;
+    Plant* plant = findPlantAt(bptr->col, bptr->row);
+    if (plant && plant->canBoost() && !plant->isBoosted()) {
+        plant->onBoost();
     }
 }

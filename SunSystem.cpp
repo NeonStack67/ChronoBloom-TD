@@ -48,16 +48,16 @@ void SunSystem::update(float dt) {
 }
 
 void SunSystem::onProduceSun(const GameEvent& event) {
-    if (auto pdata = std::any_cast<ProduceSunData>(&event.data)) {
-        auto sun = std::make_unique<Sun>(
-            pdata->pixelPos, pdata->value, sunFlyTarget, eventBus
-        );
-        entityMgr.addEntity(std::move(sun));
-    }
+    auto* pdata = std::get_if<ProduceSunData>(&event.data);
+    if (!pdata) return;
+    auto sun = std::make_unique<Sun>(
+        pdata->pixelPos, pdata->value, sunFlyTarget, eventBus
+    );
+    entityMgr.addEntity(std::move(sun));
 }
 
 void SunSystem::onCollectResource(const GameEvent& event) {
-    if (auto cdata = std::any_cast<CollectResourceData>(&event.data)) {
-        cardBar.setSunCount(cardBar.getSunCount() + cdata->value);
-    }
+    auto* cdata = std::get_if<CollectResourceData>(&event.data);
+    if (!cdata) return;
+    cardBar.setSunCount(cardBar.getSunCount() + cdata->value);
 }

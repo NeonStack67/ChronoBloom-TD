@@ -44,9 +44,16 @@ public:
     // Spine path: skelKey must already be loaded in SpineManager
     Character(Entity::SpineTag, const std::string& skelKey, int lane, float initialHp, EventManager& bus);
 
+    // Non-copyable, non-movable (holds unique_ptr members + event bus reference)
+    Character(const Character&) = delete;
+    Character& operator=(const Character&) = delete;
+    Character(Character&&) = delete;
+    Character& operator=(Character&&) = delete;
+
     void update(float dt) override;
     virtual void takeDamage(float amount);
     virtual void die();
+    void destroy() override;
 
     void equipArmor(std::unique_ptr<Armor> armor);
     bool   hasArmor()  const { return equippedArmor && !equippedArmor->isDestroyed(); }

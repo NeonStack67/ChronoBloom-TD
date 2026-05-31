@@ -1,64 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Armor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Card.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CardBar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Character.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CherryBomb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ChlorophyllButton.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EntityManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EventManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\InputHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\NormalZombie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\PeaProjectile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Peashooter.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Plant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Projectile.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Zombie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\NormalZombie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Peashooter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Sunflower.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Repeater.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ResourceManager.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CherryBomb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineComponent.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Wallnut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineManager.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Projectile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\PeaProjectile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Sun.cpp">
@@ -67,13 +46,34 @@
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SunSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Sunflower.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CardBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Wallnut.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EntityManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Zombie.cpp">
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\InputHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Armor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ChlorophyllButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\third_party\spine-runtimes\spine-sfml\src\spine-sfml.cpp">
@@ -81,101 +81,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Armor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Card.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CardBar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Character.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CherryBomb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ChlorophyllButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\DatabaseHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Entity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EntityManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Enums.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\EventManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\GameEvent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\IClickable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\InputHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\NormalZombie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\PeaProjectile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Peashooter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Plant.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Projectile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Repeater.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\ResourceManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SpineManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Sun.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\SunSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Sunflower.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Wallnut.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\Zombie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="C:\Users\jun_j\source\repos\PVZ_QianHeShiKong\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{E9F9EE7E-04B9-37C3-9DE3-42D9884CA1D8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F20A8284-1F06-3245-A22E-904915A4233C}</UniqueIdentifier>
     </Filter>

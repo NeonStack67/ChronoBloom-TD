@@ -12,6 +12,10 @@
 
 // 管理 Spine Atlas 和 SkeletonData 的加载与缓存（单例）
 // SkeletonData 每种实体只加载一次，多个实例共享
+//
+// ⚠ LIFETIME CONTRACT: SpineManager MUST outlive all SpineComponent instances.
+//   SpineComponent holds raw pointers to SkeletonData/AnimationStateData owned here.
+//   Never call clear() while any Entity with a SpineComponent still exists.
 class SpineManager {
 public:
     static SpineManager& getInstance();

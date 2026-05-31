@@ -14,10 +14,37 @@ if(MSVC)
     target_compile_options(sqlite3_embed PRIVATE /W0)
 endif()
 
-file(GLOB SOURCES *.cpp *.h)
+# Explicit source list (avoids GLOB anti-pattern: new files require cmake reconfigure)
+set(SOURCES
+    Main.cpp
+    Entity.cpp
+    Character.cpp
+    Plant.cpp
+    Zombie.cpp
+    NormalZombie.cpp
+    Peashooter.cpp
+    Sunflower.cpp
+    Repeater.cpp
+    CherryBomb.cpp
+    Wallnut.cpp
+    Projectile.cpp
+    PeaProjectile.cpp
+    Sun.cpp
+    SunSystem.cpp
+    CardBar.cpp
+    EntityManager.cpp
+    InputHandler.cpp
+    SpineManager.cpp
+    SpineComponent.cpp
+    ResourceManager.cpp
+    EventManager.cpp
+    Card.cpp
+    Armor.cpp
+    ChlorophyllButton.cpp
+)
 set(SPINE_SFML_SRC third_party/spine-runtimes/spine-sfml/src/spine-sfml.cpp)
 
-add_executable(${PROJECT_NAME} ${SOURCES} DatabaseHelper.h ${SPINE_SFML_SRC})
+add_executable(${PROJECT_NAME} ${SOURCES} ${SPINE_SFML_SRC})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     third_party/spine-runtimes/spine-cpp/include

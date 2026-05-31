@@ -54,7 +54,7 @@ void Repeater::update(float dt) {
 
             // 触发射击动画
             if (spineComp) {
-                spineComp->playAnimation("shoot", false, 0);
+                spineComp->playAnimation("attack", false, 0);
                 spineComp->addAnimation("idle", true, 0);
             }
         }

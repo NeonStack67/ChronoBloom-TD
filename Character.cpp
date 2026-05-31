@@ -5,6 +5,7 @@
 #include "ResourceManager.h"
 #include "Config.h"
 #include "SpineManager.h"
+#include "GameEvent.h"
 
 // ---------------------------------------------------------------------------
 // Constructors
@@ -80,17 +81,21 @@ void Character::equipArmor(std::unique_ptr<Armor> armor) {
     equippedArmor = std::move(armor);
 }
 
+void Character::destroy() {
+    if (!active) return;   // prevent double-publish
+    EntityDeadData data = { this, getGridPos() };
+    eventBus.publish(GameEvent(EventType::EntityDead, data));
+    Entity::destroy();
+}
+
 void Character::die() {
     if (dying) return;
 
-    EntityDeadData data = { this, getGridPos() };
-    eventBus.publish(GameEvent(EventType::EntityDead, data));
-
     if (hasSpine() && spineComp->hasAnimationName("die")) {
-        dying    = true;
+        dying      = true;
         dyingTimer = 0.f;
-        spineComp->clearTrack(0);   // discard current anim + any queued entries
-        spineComp->clearTrack(1);   // discard hurt overlay
+        spineComp->clearTrack(0);
+        spineComp->clearTrack(1);
         spineComp->resetTint();
         hurtTimer = 0.f;
         spineComp->playAnimation("die", false, 0);
